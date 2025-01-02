@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [RegistrationTestSuite]" guice-stage="DEVELOPMENT" verbose="2">
+  <listeners>
+    <listener class-name="com.AssetManagement.Listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="4" parallel="tests" name="RegistrationTests(failed)" verbose="2">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.AssetManagement.Testcases.TC_Registration_02">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeEachTest"/>
+          <include name="afterEachTest"/>
+          <include name="verifyCancelButton"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.AssetManagement.Testcases.TC_Registration_02 -->
+    </classes>
+  </test> <!-- RegistrationTests(failed) -->
+</suite> <!-- Failed suite [RegistrationTestSuite] -->

@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>TestNG:  LoginTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LoginTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 16 10:03:32 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>189 seconds (189717 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.AssetManagement.Testcases.TC_Login_09.verifySuccessfulLoginRole()'><b>verifySuccessfulLoginRole</b><br>Test class: com.AssetManagement.Testcases.TC_Login_09<br>Parameters: ADMIN, Admin@123, Super Admin</td>
+<td></td>
+<td>3</td>
+<td>com.AssetManagement.Testcases.TC_Login_09@2de23121</td></tr>
+<tr>
+<td title='com.AssetManagement.Testcases.TC_Login_04.verifyEmptyUsernamePasswordLogin()'><b>verifyEmptyUsernamePasswordLogin</b><br>Test class: com.AssetManagement.Testcases.TC_Login_04<br>Parameters: , , Super Admin</td>
+<td></td>
+<td>1</td>
+<td>com.AssetManagement.Testcases.TC_Login_04@7dc0f706</td></tr>
+<tr>
+<td title='com.AssetManagement.Testcases.TC_Login_07.verifyEmptyUsernameLogin()'><b>verifyEmptyUsernameLogin</b><br>Test class: com.AssetManagement.Testcases.TC_Login_07<br>Parameters: , Admin@123, Super Admin</td>
+<td></td>
+<td>1</td>
+<td>com.AssetManagement.Testcases.TC_Login_07@587e5365</td></tr>
+<tr>
+<td title='com.AssetManagement.Testcases.TC_Login_01.verifySuccessfulLogin()'><b>verifySuccessfulLogin</b><br>Test class: com.AssetManagement.Testcases.TC_Login_01<br>Parameters: ADMIN, Admin@123, Super Admin</td>
+<td></td>
+<td>4</td>
+<td>com.AssetManagement.Testcases.TC_Login_01@7c9d8e2</td></tr>
+<tr>
+<td title='com.AssetManagement.Testcases.TC_Login_03.verifyInvalidLogin()'><b>verifyInvalidLogin</b><br>Test class: com.AssetManagement.Testcases.TC_Login_03<br>Parameters: ADMIN1, Invalid@123, Super Admin</td>
+<td></td>
+<td>1</td>
+<td>com.AssetManagement.Testcases.TC_Login_03@3d34d211</td></tr>
+<tr>
+<td title='com.AssetManagement.Testcases.TC_Login_08.verifyEmptyPasswordLogin()'><b>verifyEmptyPasswordLogin</b><br>Test class: com.AssetManagement.Testcases.TC_Login_08<br>Parameters: ADMIN, , Super Admin</td>
+<td></td>
+<td>1</td>
+<td>com.AssetManagement.Testcases.TC_Login_08@22fcf7ab</td></tr>
+<tr>
+<td title='com.AssetManagement.Testcases.TC_Login_10.verifyInactiveUserLogin()'><b>verifyInactiveUserLogin</b><br>Test class: com.AssetManagement.Testcases.TC_Login_10<br>Parameters: 1100, Admin@100, User</td>
+<td></td>
+<td>3</td>
+<td>com.AssetManagement.Testcases.TC_Login_10@63475ace</td></tr>
+<tr>
+<td title='com.AssetManagement.Testcases.TC_Login_05.verifyInvalidLogin()'><b>verifyInvalidLogin</b><br>Test class: com.AssetManagement.Testcases.TC_Login_05<br>Parameters: ADMIN1, Admin@123, User</td>
+<td></td>
+<td>1</td>
+<td>com.AssetManagement.Testcases.TC_Login_05@4009e306</td></tr>
+<tr>
+<td title='com.AssetManagement.Testcases.TC_Login_06.verifyInvalidPasswordLogin()'><b>verifyInvalidPasswordLogin</b><br>Test class: com.AssetManagement.Testcases.TC_Login_06<br>Parameters: ADMIN, Admin@125, User</td>
+<td></td>
+<td>1</td>
+<td>com.AssetManagement.Testcases.TC_Login_06@43c1b556</td></tr>
+<tr>
+<td title='com.AssetManagement.Testcases.TC_Logout_02.verifySuccessfulLogout()'><b>verifySuccessfulLogout</b><br>Test class: com.AssetManagement.Testcases.TC_Logout_02<br>Parameters: ADMIN, Admin@123, Super Admin</td>
+<td></td>
+<td>3</td>
+<td>com.AssetManagement.Testcases.TC_Logout_02@ae13544</td></tr>
+</table><p>
+</body>
+</html>

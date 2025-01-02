@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegistrationTestSuite" thread-count="5">
+
+	<listeners>
+		<listener
+			class-name="com.AssetManagement.utilities.ExtentReportManager"></listener>
+	</listeners>
+
+	<test thread-count="5" name="Test">
+		<parameter name="os" value="windows" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.AssetManagement.Testcases.TC_Registration_01" />
+			<class name="com.AssetManagement.Testcases.TC_Registration_02" />
+		</classes>
+	</test>
+</suite>
