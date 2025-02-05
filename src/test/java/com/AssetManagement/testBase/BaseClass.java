@@ -37,7 +37,7 @@ public class BaseClass {
 
 	@BeforeClass(groups = { "Sanity", "Regression", "Master", "Datadriven" })
 	@Parameters({ "os", "browser" })
-	public void setup(@Optional("windows")String os,@Optional("chrome") String browserName) throws IOException {
+	public void setup(String os, String browserName) throws IOException {
 		// Load config
 		File src = new File("./src/test/resources/config.properties");
 		FileInputStream fis = new FileInputStream(src);
@@ -136,7 +136,7 @@ public class BaseClass {
 		}
 	}
 
-	@AfterClass(groups = { "Sanity", "Regression", "Master","Datadriven" })
+	@AfterClass(groups = { "Sanity", "Regression", "Master", "Datadriven" })
 	public void tearDown() {
 		if (driver != null) {
 			driver.quit();
