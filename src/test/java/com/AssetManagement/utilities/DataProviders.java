@@ -12,10 +12,6 @@ public class DataProviders {
 		ExcelUtility excelData = new ExcelUtility(path);
 		try {
 			int rowCount = excelData.getRowCount("Sheet1");
-			if (rowCount <= 1) {
-				throw new IllegalArgumentException("Sheet1 has no data rows.");
-			}
-
 			int colCount = excelData.getCellCount("Sheet1", 1); // Assuming row 1 contains data
 			String[][] loginData = new String[rowCount - 1][colCount]; // Exclude header row
 
